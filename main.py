@@ -1,5 +1,6 @@
 import wx
 import sys
+from ui import NotepadAI
 
 if sys.platform == "win32":
     try:
@@ -10,6 +11,5 @@ if sys.platform == "win32":
 
 if __name__ == "__main__":
     app = wx.App()
-    frame = wx.Frame(None, title="Notepad PRO", size=(900, 650))
-    frame.Show()
+    frame = NotepadAI(None, "Notepad PRO")
     app.MainLoop()
