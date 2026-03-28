@@ -2,6 +2,7 @@ import wx
 import sys
 from ui import NotepadAI
 
+# --- DPI AWARENESS FIX FOR WINDOWS ---
 if sys.platform == "win32":
     try:
         import ctypes
